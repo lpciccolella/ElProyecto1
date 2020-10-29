@@ -13,7 +13,7 @@ function cerrar(){
         	let userData = data.userData;
             if(data.status == 200){
             	//alert("Sesion cerrada");
-            	document.location.replace(`http://localhost:8080/Youtube`)
+            	document.location.replace(`http://localhost:8080/ElProyecto`)
                 //localStorage.setItem('sesion', JSON.stringify(userData));
                 localStorage.setItem('id', JSON.stringify(userData.id_usuario))
             }

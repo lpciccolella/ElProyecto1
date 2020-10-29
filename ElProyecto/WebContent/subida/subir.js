@@ -4,7 +4,7 @@ function crearArchivo(){
 	var formData = new FormData();
 	formData.append("file", document.getElementById("file").files[0]);
 	myFile = document.getElementById("file").files[0].name;
-	formData.append("id_usurio", userLogin);
+	formData.append("id_usuario", userLogin);
 	formData.append("nombre", t);
 	formData.append("nombre_archivo", myFile);
 	

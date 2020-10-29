@@ -2,7 +2,7 @@ var userLogin = localStorage.getItem("id");
 console.log(userLogin)
 
 function complete (){  
-		let url = '../Usuario?id_usurio='+userLogin;
+		let url = '../Usuario?id_usuario='+userLogin;
 	    let configs = {
 	            method: 'get',
 	            withCredentials: true,
@@ -69,7 +69,7 @@ function actualizarUsuario(){
     		nombre: document.getElementById("name").value,
     		apellido: document.getElementById("lastname").value,
             email: document.getElementById("email").value,
-            id_usurio: userLogin
+            id_usuario: userLogin
     }
     
     
@@ -102,7 +102,7 @@ function cambiarClave(){
 	if(password1 == password2){
 		var json ={
 	    		contrasena: document.getElementById("password1").value,
-	    		id_usurio: userLogin
+	    		id_usuario: userLogin
 	  
 	    }
 	    
